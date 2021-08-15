@@ -29,8 +29,16 @@
       "prettier"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "*.{js,jsx,ts,tsx}": [
+      "npx prettier --write",
+      "eslint --ext .js,.jsx --fix-dry-run"
+    ]
   },
   "browserslist": {
     "production": [
