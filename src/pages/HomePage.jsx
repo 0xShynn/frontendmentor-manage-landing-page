@@ -4,6 +4,7 @@ import { Box } from '@chakra-ui/react';
 
 import Header from '../assets/components/Header';
 import Hero from '../assets/components/Hero';
+import Presentation from '../assets/components/Presentation';
 import bgPattern from '../assets/icons/bg-tablet-pattern.svg';
 
 const HomePage = () => {
@@ -32,7 +33,7 @@ const HomePage = () => {
         />
         <Header />
         <Hero />
-        <Box h="200px" bg="gray.100"></Box>
+        <Presentation />
       </Box>
     </Box>
   );

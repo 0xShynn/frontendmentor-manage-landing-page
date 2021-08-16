@@ -27,7 +27,12 @@ const Hero = () => {
           >
             Bring everyone together to build better products.
           </Heading>
-          <Text color="gray.500" maxW="340px" mb="10">
+          <Text
+            color="gray.500"
+            maxW="340px"
+            mb={{ base: '8', lg: '10' }}
+            lineHeight="tall"
+          >
             Manage makes it simple for software teams to plan day-to-day tasks
             while keeping larger teams in goal view.
           </Text>
