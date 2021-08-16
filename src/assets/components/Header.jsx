@@ -34,14 +34,7 @@ const Header = () => {
   );
 
   return (
-    <Flex
-      justify="space-between"
-      align="center"
-      px="6"
-      bg="white"
-      py="10"
-      as=""
-    >
+    <Flex justify="space-between" align="center" px="6" bg="white" py="10">
       <Link href="#">
         <Image
           src={manageLogo}
@@ -52,20 +45,20 @@ const Header = () => {
 
       <HStack
         as="nav"
-        spacing={{ md: '4', lg: '8' }}
-        display={{ base: 'none', md: 'flex' }}
-        px="4"
+        spacing="8"
+        display={{ base: 'none', lg: 'flex' }}
+        px="3"
       >
         {navLinks.map(link => (
           <NavLink key={link + Math.random()}>{link}</NavLink>
         ))}
       </HStack>
 
-      <Button variant="primary" display={{ base: 'none', md: 'flex' }}>
+      <Button variant="primary" display={{ base: 'none', lg: 'flex' }}>
         Get Started
       </Button>
 
-      <Flex display={{ md: 'none' }}>
+      <Flex display={{ lg: 'none' }}>
         <IconButton
           colorScheme="whiteAlpha"
           aria-label="Open Menu"
@@ -80,7 +73,7 @@ const Header = () => {
         <Box
           bg="linear-gradient(360deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);"
           h="100vh"
-          display={{ base: 'flex', md: 'none' }}
+          display={{ base: 'flex', lg: 'none' }}
           w="full"
           onClick={isOpen ? onClose : onOpen}
           justifyContent="flex-end"
