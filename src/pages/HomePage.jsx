@@ -12,16 +12,24 @@ const HomePage = () => {
       <Box maxW="1165px" mx="auto">
         <Box
           bgImage={bgPattern}
-          bgPos="620px -120px"
+          bgPos={{
+            base: '50px -50px',
+            sm: '80px -50px',
+            sm2: '120px -150px',
+            md: '450px -150px',
+            lg: '520px -120px',
+            xl: '620px -120px',
+          }}
           bgSize="contain"
           bgRepeat="no-repeat"
-          h="750px"
+          h={{ base: '450px', sm: '550px', lg: '750px' }}
           w="full"
           pos="absolute"
           zIndex="hide"
         />
         <Header />
         <Hero />
+        <Box h="200px" bg="gray.100"></Box>
       </Box>
     </Box>
   );

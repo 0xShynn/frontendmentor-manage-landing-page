@@ -39,13 +39,14 @@ const Header = () => {
       align="center"
       zIndex="overlay"
       px="6"
-      pt="16"
+      pt={{ base: '6', md: '10', lg: '16' }}
     >
       <Link href="#">
         <Image
           src={manageLogo}
           w={{ base: '120px', md: '146px' }}
           alt="Manage Logo"
+          mt="3"
         />
       </Link>
 
@@ -77,14 +78,14 @@ const Header = () => {
 
       {isOpen ? (
         <Box
-          bg="linear-gradient(360deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);"
+          bg="linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);"
           h="100vh"
           display={{ base: 'flex', lg: 'none' }}
           w="full"
           onClick={isOpen ? onClose : onOpen}
           justifyContent="flex-end"
           pos="absolute"
-          pt="90px"
+          pt="110px"
           top="0"
           left="0"
           zIndex="dropdown"

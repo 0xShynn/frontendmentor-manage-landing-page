@@ -6,19 +6,23 @@ import IllustrationIntro from '../icons/illustration-intro.svg';
 
 const Hero = () => {
   return (
-    <Box mt="24">
+    <Box mt={{ base: '8', lg: '24' }}>
       <Flex
-        direction={{ base: 'column', md: 'row' }}
+        direction={{ base: 'column-reverse', md: 'row' }}
         justify="space-between"
         px="6"
       >
-        <Box maxW="570px">
+        <Box
+          maxW="570px"
+          textAlign={{ base: 'center', md: 'left' }}
+          bg="red.100"
+        >
           <Heading
             as="h1"
             color="primary.blue"
-            fontSize="54"
-            mb="10"
-            mt="16"
+            fontSize={{ base: '36', lg: '54' }}
+            mb={{ base: '4', lg: '10' }}
+            mt={{ base: '2', md: '8', lg: '16' }}
             maxW="440px"
           >
             Bring everyone together to build better products.
@@ -29,9 +33,12 @@ const Hero = () => {
           </Text>
           <Button variant="primary">Get Started</Button>
         </Box>
-        <Box>
-          <Image src={IllustrationIntro} w="570px" />
-        </Box>
+        <Flex justify="center">
+          <Image
+            src={IllustrationIntro}
+            w={{ base: '400px', lg: '480px', xl: '570px' }}
+          />
+        </Flex>
       </Flex>
     </Box>
   );
