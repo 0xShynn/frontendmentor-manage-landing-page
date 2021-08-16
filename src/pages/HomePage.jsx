@@ -17,14 +17,17 @@ const HomePage = () => {
             sm: '80px -50px',
             sm2: '120px -150px',
             md: '450px -150px',
-            lg: '520px -120px',
-            xl: '620px -120px',
+            lg: '560px -180px',
+            lg2: '700px -180px',
+            xl: '780px -120px',
           }}
           bgSize="contain"
           bgRepeat="no-repeat"
           h={{ base: '450px', sm: '550px', lg: '750px' }}
           w="full"
           pos="absolute"
+          top="0"
+          right="0"
           zIndex="hide"
         />
         <Header />

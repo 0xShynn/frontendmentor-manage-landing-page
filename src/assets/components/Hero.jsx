@@ -10,19 +10,19 @@ const Hero = () => {
       <Flex
         direction={{ base: 'column-reverse', md: 'row' }}
         justify="space-between"
-        px="6"
+        px={{ base: '6', md: '10', lg: '10', xl: '6' }}
       >
         <Box
           maxW="570px"
           textAlign={{ base: 'center', md: 'left' }}
-          bg="red.100"
+          mx={{ base: 'auto', md: '0' }}
         >
           <Heading
             as="h1"
             color="primary.blue"
             fontSize={{ base: '36', lg: '54' }}
             mb={{ base: '4', lg: '10' }}
-            mt={{ base: '2', md: '8', lg: '16' }}
+            mt={{ base: '2', md: '8', lg: '12', xl: '16' }}
             maxW="440px"
           >
             Bring everyone together to build better products.
