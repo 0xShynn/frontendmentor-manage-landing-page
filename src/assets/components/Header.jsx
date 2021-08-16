@@ -23,7 +23,7 @@ const Header = () => {
 
   const NavLink = ({ children }) => (
     <Link
-      fontSize="md"
+      fontSize="sm"
       fontWeight="700"
       color="primary.blue"
       _hover={{ color: 'neutral.blue.grayish' }}
@@ -34,7 +34,13 @@ const Header = () => {
   );
 
   return (
-    <Flex justify="space-between" align="center" px="6" bg="white" py="10">
+    <Flex
+      justify="space-between"
+      align="center"
+      zIndex="overlay"
+      px="6"
+      pt="16"
+    >
       <Link href="#">
         <Image
           src={manageLogo}
