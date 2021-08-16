@@ -49,17 +49,24 @@ const customTheme = extendTheme({
     Button: {
       baseStyle: {
         rounded: 'full',
-        shadow: 'xl',
       },
       sizes: {
         sm: {},
-        md: {},
+        md: {
+          px: '8',
+          py: '6',
+          fontSize: 'sm',
+        },
         lg: {},
       },
       variants: {
         primary: {
           bg: 'primary.red',
           color: 'white',
+          boxShadow: '0px 12px 20px -10px rgba(255,90,40,0.8);',
+          _hover: {
+            opacity: '.7',
+          },
         },
       },
     },
