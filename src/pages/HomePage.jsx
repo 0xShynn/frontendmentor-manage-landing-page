@@ -1,11 +1,15 @@
 import React from 'react';
 
-import { Box, Text } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
+
+import Header from '../assets/components/Header';
 
 const HomePage = () => {
   return (
-    <Box>
-      <Text>Hello world</Text>
+    <Box h="100vh" bg="gray.100">
+      <Box maxW="1140px" mx="auto" pt="60px">
+        <Header />
+      </Box>
     </Box>
   );
 };

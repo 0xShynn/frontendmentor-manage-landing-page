@@ -1,7 +1,13 @@
 import { extendTheme } from '@chakra-ui/react';
 
 const customTheme = extendTheme({
-  breakpoints: {},
+  breakpoints: {
+    sm: '375px',
+    md: '768px',
+    lg: '1024px',
+    xl: '1440px',
+    '2xl': '1920px',
+  },
   styles: {
     global: {
       // styles for the `body`
@@ -16,8 +22,22 @@ const customTheme = extendTheme({
     body: '"Be Vietnam"',
   },
   colors: {
-    primary: {},
-    neutral: {},
+    primary: {
+      red: 'hsl(12, 88%, 59%)',
+      blue: 'hsl(228, 39%, 23%)',
+    },
+    neutral: {
+      blue: {
+        grayish: 'hsl(227, 12%, 61%)',
+        verydark: 'hsl(233, 12%, 13%)',
+      },
+      red: {
+        100: 'hsl(13, 100%, 96%)',
+      },
+      gray: {
+        100: 'hsl(0, 0%, 98%)',
+      },
+    },
   },
   components: {
     Container: {
@@ -27,14 +47,20 @@ const customTheme = extendTheme({
       },
     },
     Button: {
-      baseStyle: {},
+      baseStyle: {
+        rounded: 'full',
+        shadow: 'xl',
+      },
       sizes: {
         sm: {},
         md: {},
         lg: {},
       },
       variants: {
-        primary: {},
+        primary: {
+          bg: 'primary.red',
+          color: 'white',
+        },
       },
     },
 
