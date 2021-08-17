@@ -2,13 +2,10 @@ import React from 'react';
 
 import {
   Box,
-  Button,
   Flex,
   HStack,
   Icon,
   Image,
-  Input,
-  InputGroup,
   Link,
   Text,
   VStack,
@@ -20,6 +17,8 @@ import IconInstagram from '../icons/social/IconInstagram';
 import IconPinterest from '../icons/social/IconPinterest';
 import IconTwitter from '../icons/social/IconTwitter';
 import IconYoutube from '../icons/social/IconYoutube';
+
+import InputNewsletter from './InputNewsletter';
 
 const Footer = () => {
   const socialIcons = [
@@ -105,14 +104,22 @@ const Footer = () => {
               fontSize="sm"
             >
               {navLinks.map((link, index) => (
-                <Link color="white" key={index}>
+                <Link
+                  color="white"
+                  key={index}
+                  _hover={{ color: 'primary.red' }}
+                >
                   {link}
                 </Link>
               ))}
             </VStack>
             <VStack align="flex-start" spacing="5" fontSize="sm">
               {navLinks2.map((link, index) => (
-                <Link color="white" key={index}>
+                <Link
+                  color="white"
+                  key={index}
+                  _hover={{ color: 'primary.red' }}
+                >
                   {link}
                 </Link>
               ))}
@@ -126,22 +133,7 @@ const Footer = () => {
             justifyContent="space-between"
             align="flex-end"
           >
-            <Flex>
-              <InputGroup>
-                <Input
-                  placeholder="Updates in your inbox..."
-                  rounded="full"
-                  bg="white"
-                  px="6"
-                  fontSize="sm"
-                  mr="2"
-                  w={{ base: 'full', md: '40', lg: '64' }}
-                />
-                <Button variant="primary" size="sm" shadow="none" type="submit">
-                  GO
-                </Button>
-              </InputGroup>
-            </Flex>
+            <InputNewsletter />
             <Flex>
               <Text
                 color="neutral.blue.grayish"
