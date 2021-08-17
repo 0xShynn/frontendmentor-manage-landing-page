@@ -21,6 +21,7 @@ const HomePage = () => {
             lg: '560px -180px',
             lg2: '700px -180px',
             xl: '780px -120px',
+            '2xl': '1000px -120px',
           }}
           bgSize="contain"
           bgRepeat="no-repeat"

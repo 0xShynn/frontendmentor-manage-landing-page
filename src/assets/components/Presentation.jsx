@@ -32,8 +32,8 @@ const Presentation = () => {
       </Flex>
       <Text
         color="gray.500"
-        fontSize="sm"
-        lineHeight="taller"
+        fontSize={{ base: 'sm', lg: 'md' }}
+        lineHeight={{ base: 'taller', lg: 'tall' }}
         pr={{ base: '6', md: '10', xl: '6' }}
         pl={{ base: '0', md: '78px', lg: '92px' }}
       >
@@ -55,12 +55,12 @@ const Presentation = () => {
           px={{ base: '6', md: '10', xl: '6' }}
           maxW={{ base: 'full', md: '540px' }}
         >
-          <Heading color="primary.blue" mb={{ base: '4', xl: '6' }}>
+          <Heading color="primary.blue" mb={{ base: '4', lg: '6', xl: '8' }}>
             What's different about Manage?
           </Heading>
           <Text
             color="gray.500"
-            fontSize="sm"
+            fontSize={{ base: 'sm', lg: 'md' }}
             lineHeight={{ base: 'taller', lg: 'tall' }}
             maxW="300px"
             mx={{ base: 'auto', md: '0' }}
