@@ -5,6 +5,7 @@ import {
   Button,
   Flex,
   HStack,
+  Icon,
   Image,
   Input,
   InputGroup,
@@ -13,20 +14,20 @@ import {
   VStack,
 } from '@chakra-ui/react';
 
-import IconFacebook from '../icons/icon-facebook.svg';
-import IconInstagram from '../icons/icon-instagram.svg';
-import IconPinterest from '../icons/icon-pinterest.svg';
-import IconTwitter from '../icons/icon-twitter.svg';
-import IconYoutube from '../icons/icon-youtube.svg';
 import ManageLogo from '../icons/logo-white.svg';
+import IconFacebook from '../icons/social/IconFacebook';
+import IconInstagram from '../icons/social/IconInstagram';
+import IconPinterest from '../icons/social/IconPinterest';
+import IconTwitter from '../icons/social/IconTwitter';
+import IconYoutube from '../icons/social/IconYoutube';
 
 const Footer = () => {
   const socialIcons = [
-    IconFacebook,
-    IconYoutube,
-    IconTwitter,
-    IconPinterest,
-    IconInstagram,
+    <IconFacebook />,
+    <IconYoutube />,
+    <IconTwitter />,
+    <IconPinterest />,
+    <IconInstagram />,
   ];
 
   const navLinks = ['Home', 'Pricing', 'Products', 'About Us'];
@@ -73,15 +74,20 @@ const Footer = () => {
               mx={{ base: 'auto', md: '0' }}
             />
             <HStack
-              spacing={{ base: '4', sm: '10', md: '4' }}
+              spacing={{ base: '2', sm: '8', md: '4' }}
               mb={{ base: '12', md: '0' }}
             >
               {socialIcons.map((icon, index) => (
-                <Image
+                <Icon
                   key={index}
-                  src={icon}
-                  width={{ base: '24px', sm: '30px', md: '20px' }}
-                />
+                  boxSize={{ base: '8', sm: '8', md: '5' }}
+                  // width={{ base: '24px', sm: '30px', md: '20px' }}
+                  color="white"
+                  cursor="pointer"
+                  _hover={{ color: 'primary.red' }}
+                >
+                  {icon}
+                </Icon>
               ))}
             </HStack>
           </Flex>

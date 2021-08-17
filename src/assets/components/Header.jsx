@@ -12,9 +12,9 @@ import {
   VStack,
 } from '@chakra-ui/react';
 
-import IconClose from '../icons/IconClose';
-import IconHamburger from '../icons/IconHamburger';
 import manageLogo from '../icons/logo.svg';
+import IconClose from '../icons/ui/IconClose';
+import IconHamburger from '../icons/ui/IconHamburger';
 
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -71,7 +71,13 @@ const Header = () => {
           aria-label="Open Menu"
           size="lg"
           onClick={isOpen ? onClose : onOpen}
-          icon={isOpen ? <IconClose /> : <IconHamburger />}
+          icon={
+            isOpen ? (
+              <IconClose color="primary.blue" />
+            ) : (
+              <IconHamburger color="primary.blue" />
+            )
+          }
           zIndex="overlay"
         />
       </Flex>

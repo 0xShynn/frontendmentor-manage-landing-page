@@ -16,6 +16,7 @@ const customTheme = extendTheme({
       body: {
         fontSize: '16px',
         fontFamily: 'body',
+        bg: 'white',
       },
     },
   },
