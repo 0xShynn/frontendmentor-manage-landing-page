@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Box } from '@chakra-ui/react';
 
+import Footer from '../assets/components/Footer';
 import Header from '../assets/components/Header';
 import Hero from '../assets/components/Hero';
 import Presentation from '../assets/components/Presentation';
@@ -36,6 +37,7 @@ const HomePage = () => {
         <Hero />
         <Presentation />
       </Box>
+      <Footer />
     </Box>
   );
 };

@@ -53,7 +53,11 @@ const customTheme = extendTheme({
         rounded: 'full',
       },
       sizes: {
-        sm: {},
+        sm: {
+          px: '7',
+          py: '5',
+          fontSize: 'xs',
+        },
         md: {
           px: '8',
           py: '6',
