@@ -35,12 +35,38 @@ const HomePage = () => {
           right="0"
           zIndex="hide"
         />
+        <Box
+          bgImage={bgPattern}
+          bgPos={{
+            sm: '240px 440px',
+            sm2: '400px 440px',
+            md: '-400px 900px',
+            lg: '-550px 1050px',
+            lg2: '-500px 1050px',
+            xl: '-400px 1100px',
+          }}
+          bgSize="contain"
+          bgRepeat="no-repeat"
+          h={{
+            sm: '1000px',
+            sm2: '1200px',
+            md: '2000px',
+            lg: '2000px',
+            xl: '2000px',
+          }}
+          w={{ sm: 'full', md: '550px', lg: '750px' }}
+          pos="absolute"
+          top="0"
+          left="0"
+          zIndex="hide"
+        />
         <Header />
         <Hero />
         <Presentation />
       </Box>
       <Testimonials />
       <BannerBottom />
+
       <Footer />
     </Box>
   );

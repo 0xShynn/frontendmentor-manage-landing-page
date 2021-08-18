@@ -8,6 +8,7 @@ const Presentation = () => {
       pl="4"
       w={{ base: 'full', md: '400px', lg: '520px', xl: '590px' }}
       boxSizing="border-box"
+      mb="10"
     >
       <Flex
         bg={{ base: 'neutral.red.100', md: 'none' }}
@@ -69,7 +70,7 @@ const Presentation = () => {
             teams.
           </Text>
         </Box>
-        <Box mb={{ base: '10', md: '0' }}>
+        <Box mb={{ base: '10', md: '0' }} bg="white">
           <PresentationItem
             number="01"
             title="Track company-wide progress"
