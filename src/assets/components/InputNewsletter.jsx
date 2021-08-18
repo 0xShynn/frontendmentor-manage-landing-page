@@ -8,14 +8,25 @@ import {
   FormErrorMessage,
   Input,
 } from '@chakra-ui/react';
+import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form';
+import * as yup from 'yup';
+
+const schema = yup.object().shape({
+  newsletter: yup
+    .string()
+    .email('Please insert a valid email')
+    .required('An email is required'),
+});
 
 const InputNewsletter = () => {
   const {
     handleSubmit,
     register,
     formState: { errors, isSubmitting },
-  } = useForm();
+  } = useForm({
+    resolver: yupResolver(schema),
+  });
 
   function onSubmit(values) {
     return new Promise(resolve => {
