@@ -2,12 +2,13 @@ import React from 'react';
 
 import { Box } from '@chakra-ui/react';
 
+import BannerBottom from '../assets/components/BannerBottom';
 import Footer from '../assets/components/Footer';
 import Header from '../assets/components/Header';
 import Hero from '../assets/components/Hero';
 import Presentation from '../assets/components/Presentation';
+import Testimonials from '../assets/components/Testimonials';
 import bgPattern from '../assets/icons/bg-tablet-pattern.svg';
-import BannerBottom from '../assets/components/BannerBottom';
 
 const HomePage = () => {
   return (
@@ -37,6 +38,7 @@ const HomePage = () => {
         <Header />
         <Hero />
         <Presentation />
+        <Testimonials />
       </Box>
       <BannerBottom />
       <Footer />
