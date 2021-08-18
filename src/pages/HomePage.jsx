@@ -38,8 +38,8 @@ const HomePage = () => {
         <Header />
         <Hero />
         <Presentation />
-        <Testimonials />
       </Box>
+      <Testimonials />
       <BannerBottom />
       <Footer />
     </Box>

@@ -6,7 +6,6 @@ const Presentation = () => {
   const PresentationItem = ({ number, title, description }) => (
     <Box
       pl="4"
-      pb="10"
       w={{ base: 'full', md: '400px', lg: '520px', xl: '590px' }}
       boxSizing="border-box"
     >
