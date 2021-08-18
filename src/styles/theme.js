@@ -75,6 +75,14 @@ const customTheme = extendTheme({
             opacity: '.7',
           },
         },
+        white: {
+          bg: 'white',
+          color: 'primary.red',
+          boxShadow: '0px 12px 20px -10px rgba(0,0,0,0.3);',
+          _hover: {
+            opacity: '.8',
+          },
+        },
       },
     },
 

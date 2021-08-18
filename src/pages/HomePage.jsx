@@ -7,6 +7,7 @@ import Header from '../assets/components/Header';
 import Hero from '../assets/components/Hero';
 import Presentation from '../assets/components/Presentation';
 import bgPattern from '../assets/icons/bg-tablet-pattern.svg';
+import BannerBottom from '../assets/components/BannerBottom';
 
 const HomePage = () => {
   return (
@@ -37,6 +38,7 @@ const HomePage = () => {
         <Hero />
         <Presentation />
       </Box>
+      <BannerBottom />
       <Footer />
     </Box>
   );

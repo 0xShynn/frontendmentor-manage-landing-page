@@ -97,6 +97,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 
 - [Box Shadow Generator](https://cssgenerator.org/box-shadow-css-generator.html) - This helped me creating tailored box shadow for primary buttons.
+- [React Hook Form](https://react-hook-form.com) - Performant form builder
+- [Yup Validator](https://github.com/jquense/yup) - JS Schema validator for the newsletter form.
 
 ## Author
 
