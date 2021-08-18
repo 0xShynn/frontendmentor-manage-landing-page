@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Box, Button, Flex, Heading, Image, Text } from '@chakra-ui/react';
 
-import IllustrationIntro from '../icons/illustration-intro.svg';
+import IllustrationIntro from '../visuals/ui/illustration-intro.svg';
 
 const Hero = () => {
   return (
@@ -42,6 +42,7 @@ const Hero = () => {
           <Image
             src={IllustrationIntro}
             w={{ base: '400px', lg: '480px', xl: '570px' }}
+            alt="Manage - Illustration intro"
           />
         </Flex>
       </Flex>

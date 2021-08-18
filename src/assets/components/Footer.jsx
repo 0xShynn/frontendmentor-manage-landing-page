@@ -11,12 +11,12 @@ import {
   VStack,
 } from '@chakra-ui/react';
 
-import ManageLogo from '../icons/logo-white.svg';
-import IconFacebook from '../icons/social/IconFacebook';
-import IconInstagram from '../icons/social/IconInstagram';
-import IconPinterest from '../icons/social/IconPinterest';
-import IconTwitter from '../icons/social/IconTwitter';
-import IconYoutube from '../icons/social/IconYoutube';
+import ManageLogo from '../visuals/brand/logo-white.svg';
+import IconFacebook from '../visuals/social/IconFacebook';
+import IconInstagram from '../visuals/social/IconInstagram';
+import IconPinterest from '../visuals/social/IconPinterest';
+import IconTwitter from '../visuals/social/IconTwitter';
+import IconYoutube from '../visuals/social/IconYoutube';
 
 import InputNewsletter from './InputNewsletter';
 
@@ -71,6 +71,7 @@ const Footer = () => {
               width="160px"
               mb={{ base: '10', md: '20' }}
               mx={{ base: 'auto', md: '0' }}
+              alt="Manage logo"
             />
             <HStack
               spacing={{ base: '2', sm: '8', md: '4' }}

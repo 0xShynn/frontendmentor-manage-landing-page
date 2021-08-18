@@ -84,6 +84,7 @@ const Testimonials = () => {
                 w="70px"
                 pos="absolute"
                 top="0"
+                alt={`Avatar of ${item.name}`}
               />
               <Box
                 bg="neutral.gray.100"
@@ -93,7 +94,7 @@ const Testimonials = () => {
                 mt="35px"
                 rounded="md"
               >
-                <Heading mb="4" fontSize="16">
+                <Heading mb="4" fontSize="16" as="h3">
                   {item.name}
                 </Heading>
                 <Text color="gray.500" fontSize="sm" lineHeight="taller">

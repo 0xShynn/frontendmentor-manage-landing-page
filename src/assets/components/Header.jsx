@@ -12,9 +12,9 @@ import {
   VStack,
 } from '@chakra-ui/react';
 
-import manageLogo from '../icons/logo.svg';
-import IconClose from '../icons/ui/IconClose';
-import IconHamburger from '../icons/ui/IconHamburger';
+import manageLogo from '../visuals/brand/logo.svg';
+import IconClose from '../visuals/ui/IconClose';
+import IconHamburger from '../visuals/ui/IconHamburger';
 
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

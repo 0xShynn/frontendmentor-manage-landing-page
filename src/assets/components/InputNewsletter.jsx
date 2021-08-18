@@ -6,6 +6,7 @@ import {
   Flex,
   FormControl,
   FormErrorMessage,
+  FormLabel,
   Input,
 } from '@chakra-ui/react';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -40,7 +41,10 @@ const InputNewsletter = () => {
   return (
     <Flex>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <FormControl isInvalid={errors.newsletter}>
+        <FormControl isInvalid={errors.newsletter} id="newsletter">
+          <FormLabel display="none" color="red">
+            Sign up newsletter form
+          </FormLabel>
           <Flex>
             <Input
               id="newsletter"

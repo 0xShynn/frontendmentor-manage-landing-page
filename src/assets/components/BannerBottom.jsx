@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Box, Button, Flex, Heading } from '@chakra-ui/react';
 
-import bgPattern from '../icons/bg-tablet-pattern.svg';
+import bgPattern from '../visuals/ui/bg-tablet-pattern.svg';
 
 const BannerBottom = () => {
   return (

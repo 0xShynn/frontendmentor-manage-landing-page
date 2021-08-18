@@ -2,20 +2,19 @@ import React from 'react';
 
 import { Box } from '@chakra-ui/react';
 
+import BackgroundPattern from '../assets/components/BackgroundPattern';
 import BannerBottom from '../assets/components/BannerBottom';
 import Footer from '../assets/components/Footer';
 import Header from '../assets/components/Header';
 import Hero from '../assets/components/Hero';
 import Presentation from '../assets/components/Presentation';
 import Testimonials from '../assets/components/Testimonials';
-import bgPattern from '../assets/icons/bg-tablet-pattern.svg';
 
 const HomePage = () => {
   return (
     <Box h="100vh">
       <Box maxW="1165px" mx="auto">
-        <Box
-          bgImage={bgPattern}
+        <BackgroundPattern
           bgPos={{
             base: '50px -50px',
             sm: '80px -50px',
@@ -26,17 +25,12 @@ const HomePage = () => {
             xl: '780px -120px',
             '2xl': '1000px -120px',
           }}
-          bgSize="contain"
-          bgRepeat="no-repeat"
-          h={{ base: '450px', sm: '550px', lg: '750px' }}
-          w="full"
-          pos="absolute"
+          height={{ base: '450px', sm: '550px', lg: '750px' }}
+          width="full"
           top="0"
           right="0"
-          zIndex="hide"
         />
-        <Box
-          bgImage={bgPattern}
+        <BackgroundPattern
           bgPos={{
             sm: '240px 440px',
             sm2: '400px 440px',
@@ -45,20 +39,16 @@ const HomePage = () => {
             lg2: '-500px 1050px',
             xl: '-400px 1100px',
           }}
-          bgSize="contain"
-          bgRepeat="no-repeat"
-          h={{
+          height={{
             sm: '1000px',
             sm2: '1200px',
             md: '2000px',
             lg: '2000px',
             xl: '2000px',
           }}
-          w={{ sm: 'full', md: '550px', lg: '750px' }}
-          pos="absolute"
+          width={{ sm: 'full', md: '550px', lg: '750px' }}
           top="0"
           left="0"
-          zIndex="hide"
         />
         <Header />
         <Hero />
@@ -66,7 +56,6 @@ const HomePage = () => {
       </Box>
       <Testimonials />
       <BannerBottom />
-
       <Footer />
     </Box>
   );

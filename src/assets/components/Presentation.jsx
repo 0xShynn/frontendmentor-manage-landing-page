@@ -21,14 +21,15 @@ const Presentation = () => {
             {number}
           </Text>
         </Box>
-        <Text
+        <Heading
+          as="h3"
           ml={{ base: '3', lg: '6' }}
           fontSize="md"
           fontWeight="700"
           color="primary.blue"
         >
           {title}
-        </Text>
+        </Heading>
       </Flex>
       <Text
         color="gray.500"
