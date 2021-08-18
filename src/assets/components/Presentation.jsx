@@ -32,7 +32,7 @@ const Presentation = () => {
         </Heading>
       </Flex>
       <Text
-        color="gray.500"
+        color="gray.600"
         fontSize={{ base: 'sm', lg: 'md' }}
         lineHeight={{ base: 'taller', lg: 'tall' }}
         pr={{ base: '6', md: '10', xl: '6' }}
@@ -60,7 +60,7 @@ const Presentation = () => {
             What's different about Manage?
           </Heading>
           <Text
-            color="gray.500"
+            color="gray.600"
             fontSize={{ base: 'sm', lg: 'md' }}
             lineHeight={{ base: 'taller', lg: 'tall' }}
             maxW="300px"

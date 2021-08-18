@@ -28,7 +28,7 @@ const Hero = () => {
             Bring everyone together to build better products.
           </Heading>
           <Text
-            color="gray.500"
+            color="gray.600"
             maxW="340px"
             mb={{ base: '8', lg: '10' }}
             lineHeight="tall"

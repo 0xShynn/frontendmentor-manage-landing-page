@@ -49,7 +49,7 @@ const InputNewsletter = () => {
             <Input
               id="newsletter"
               placeholder="Updates in your inbox..."
-              _placeholder={{ color: 'gray.500' }}
+              _placeholder={{ color: 'gray.600' }}
               w={{ base: 'full', sm: '60', md: '40', lg: '64' }}
               rounded="full"
               bg="white"

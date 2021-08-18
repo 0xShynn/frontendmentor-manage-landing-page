@@ -97,7 +97,7 @@ const Testimonials = () => {
                 <Heading mb="4" fontSize="16" as="h3">
                   {item.name}
                 </Heading>
-                <Text color="gray.500" fontSize="sm" lineHeight="taller">
+                <Text color="gray.600" fontSize="sm" lineHeight="taller">
                   {item.testimonial}
                 </Text>
               </Box>
