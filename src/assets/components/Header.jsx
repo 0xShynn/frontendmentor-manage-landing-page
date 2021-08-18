@@ -91,14 +91,14 @@ const Header = () => {
           onClick={isOpen ? onClose : onOpen}
           justifyContent="flex-end"
           pos="absolute"
-          pt="110px"
+          pt="90px"
           top="0"
           left="0"
           zIndex="dropdown"
         >
           <VStack
             bg="white"
-            w={{ base: 'full', sm: '80' }}
+            w={{ base: 'full', md: '80' }}
             py="10"
             m="6"
             rounded="md"
