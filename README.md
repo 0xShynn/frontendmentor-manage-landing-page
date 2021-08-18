@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [http://github.com/anhek/frontendmentor-manage-landing-page](http://github.com/anhek/frontendmentor-manage-landing-page)
+- Solution URL: [https://github.com/anhek/frontendmentor-manage-landing-page](https://github.com/anhek/frontendmentor-manage-landing-page)
 - Live Site URL: [https://anhek-manage-landing-page.netlify.app](https://anhek-manage-landing-page.netlify.app)
 
 ## My process
