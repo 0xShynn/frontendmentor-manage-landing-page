@@ -35,7 +35,7 @@ const Footer = () => {
   const copyrightText = 'Copyright 2020. All rights reserved.';
 
   return (
-    <Box bg="neutral.blue.verydark">
+    <Box bg="neutral.blue.verydark" pos="relative" zIndex="overlay">
       <Flex
         direction={{ base: 'column-reverse', md: 'column' }}
         align={{ base: 'center', md: 'flex-start' }}
