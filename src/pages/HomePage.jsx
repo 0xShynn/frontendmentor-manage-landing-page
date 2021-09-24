@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Box } from '@chakra-ui/react';
+import { Helmet } from 'react-helmet-async';
 
 import BackgroundPattern from '../assets/components/BackgroundPattern';
 import BannerBottom from '../assets/components/BannerBottom';
@@ -11,8 +12,27 @@ import Presentation from '../assets/components/Presentation';
 import Testimonials from '../assets/components/Testimonials';
 
 const HomePage = () => {
+  const siteTitle = 'Manage';
+  const description =
+    'Manage makes it simple for software teams to plan day-to-day tasks while keeping larger teams in goal view.';
   return (
     <Box h="100vh">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{siteTitle} | Home</title>
+        <link
+          rel="canonical"
+          href="https://anhek-manage-landing-page.netlify.app"
+        />
+        <meta name="description" content={description} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={siteTitle} />
+        <meta name="twitter:description" content={description} />
+        <meta
+          name="twitter:image"
+          content="https://www.dropbox.com/s/76yqxwpcsvuwqkd/manage-ogimage.jpg?raw=1"
+        />
+      </Helmet>
       <Box maxW="1165px" mx="auto">
         <BackgroundPattern
           bgPos={{

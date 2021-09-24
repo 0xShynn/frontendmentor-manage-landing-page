@@ -2,6 +2,7 @@ import React, { StrictMode } from 'react';
 
 import { ColorModeScript } from '@chakra-ui/react';
 import ReactDOM from 'react-dom';
+import { HelmetProvider } from 'react-helmet-async';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -10,7 +11,9 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <StrictMode>
     <ColorModeScript />
-    <App />
+    <HelmetProvider>
+      <App />
+    </HelmetProvider>
   </StrictMode>,
   document.getElementById('root')
 );
