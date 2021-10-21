@@ -33,6 +33,7 @@ const customTheme = extendTheme({
       blue: {
         grayish: 'hsl(227, 12%, 61%)',
         verydark: 'hsl(233, 12%, 13%)',
+        superdark: '#18191f',
       },
       red: {
         100: 'hsl(13, 100%, 96%)',
