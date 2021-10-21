@@ -18,6 +18,7 @@ import IconPinterest from '../visuals/social/IconPinterest';
 import IconTwitter from '../visuals/social/IconTwitter';
 import IconYoutube from '../visuals/social/IconYoutube';
 
+import AuthorBanner from './AuthorBanner';
 import InputNewsletter from './InputNewsletter';
 
 const Footer = () => {
@@ -147,6 +148,7 @@ const Footer = () => {
           </Flex>
         </Flex>
       </Flex>
+      <AuthorBanner />
     </Box>
   );
 };
